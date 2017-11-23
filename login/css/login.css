@@ -61,12 +61,13 @@ body {
   padding: 12px 10px;
 }
 .login input {
-  width: 270px;
+  width: 230px;
   height: 28px;
   outline: none;
   padding: 5px;
   color: #000;
   position: relative;
+  padding-right: 45px;
 }
 .login #username,
 .login #password {
