@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>融益行-订单查询</title>
+    <link rel="stylesheet" href="/RongYiXing/css/common.css">
+    <link rel="stylesheet" href="/RongYiXing/orders/css/orders.css">
+    <script src="/RongYiXing/js/vue.min.js"></script>
+    <script src="/RongYiXing/lib/layDate/laydate/laydate.js"></script>
+</head>
+<body>
+    <div id="root">
+        <component-header></component-header>
+        <section class="main">
+            <component-menu></component-menu>
+            <div class="content">
+                <div class="form-group">
+                    <label for="username">名称：</label>
+                    <input name="" type="text" id="username" class="username">
+                    <label for="pay_state">是否支付：</label>
+                    <select name="" id="pay_state" class="pay-state">
+                        <option value="0">未支付</option>
+                        <option value="1">已支付</option>
+                    </select>
+                    <span class="caret"></span>
+                </div>
+                <div class="form-group">
+                    <label>订单时间：</label>
+                    <input type="text" id="datetimepicker_start" class="datetime">
+                    <span style="padding: 0 10px;">至</span>
+                    <input type="text" id="datetimepicker_end" class="datetime">
+                    <button class="query-orders">查询订单</button>
+                </div>
+                <div class="orders-tabel">
+                    <div class="tabel-row tabel-caption">
+                        <div class="tabel-cell">订单编号</div>
+                        <div class="tabel-cell">商家账号</div>
+                        <div class="tabel-cell">消费者账号</div>
+                        <div class="tabel-cell">产品名称</div>
+                        <div class="tabel-cell">消费金额</div>
+                        <div class="tabel-cell">创建时间</div>
+                        <div class="tabel-cell">是否支付</div>
+                        <div class="tabel-cell">分配元宝时间</div>
+                        <div class="tabel-cell">分配金元宝时间</div>
+                    </div>
+                    <div class="tabel-row" v-for="orders in ordersData">
+                        <div class="tabel-cell" v-text="orders.orderId"></div>
+                        <div class="tabel-cell" v-text="orders.merchantAccount"></div>
+                        <div class="tabel-cell" v-text="orders.consumerAccount"></div>
+                        <div class="tabel-cell" v-text="orders.productName"></div>
+                        <div class="tabel-cell" v-text="orders.monetary"></div>
+                        <div class="tabel-cell" v-text="orders.createTime"></div>
+                        <div class="tabel-cell" v-text="orders.payState"></div>
+                        <div class="tabel-cell" v-text="orders.allotIngotTime"></div>
+                        <div class="tabel-cell" v-text="orders.allotGlodIngotTime"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <component-footer></component-footer>
+    </div>
+    <script src="/RongYiXing/js/common.js"></script>
+    <script src="/RongYiXing/orders/js/orders.js"></script>
+</body>
+</html>
