@@ -1,0 +1,95 @@
+.content {
+  font-size: 14px;
+  float: left;
+  padding-top: 51px;
+  padding-left: 68px;
+}
+.content .form-group {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.content .form-group label {
+  display: inline-block;
+  width: 84px;
+}
+.content .form-group input, .content .form-group .pay-state {
+  height: 22px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  padding-left: 14px;
+  box-sizing: border-box;
+}
+.content .form-group .username {
+  width: 214px;
+  margin-right: 163px;
+}
+.content .form-group .pay-state {
+  -webkit-appearance: none;
+  width: 129px;
+  outline: none;
+  position: relative;
+}
+.content .form-group .caret {
+  height: 5px;
+  width: 5px;
+  border: 1px solid #d3d3d3;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg);
+  display: inline-block;
+  position: relative;
+  left: -45px;
+  top: -2px;
+}
+.content .form-group .datetime {
+  width: 152px;
+}
+.content .form-group .query-orders {
+  width: 91px;
+  height: 22px;
+  margin-left: 41px;
+  color: #fff;
+  background: #1867f0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.content .form-group .query-orders:active {
+  opacity: .8;
+}
+.content .orders-tabel {
+  width: 1330px;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
+  text-align: left;
+}
+.content .orders-tabel .tabel-row {
+  display: flex;
+}
+.content .orders-tabel .tabel-caption {
+  background: #f9f9f9;
+}
+.content .orders-tabel .tabel-cell {
+  height: 35px;
+  line-height: 35px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  border-top: 1px solid #c3c3c3;
+  border-left: 1px solid #c3c3c3;
+}
+.content .orders-tabel .tabel-cell:nth-child(2n-1) {
+  background: #f9f9f9;
+}
+.content .orders-tabel .tabel-cell:nth-child(1) {
+  flex: 5;
+}
+.content .orders-tabel .tabel-cell:nth-child(2) {
+  flex: 3;
+}
+.content .orders-tabel .tabel-cell:nth-child(3), .content .orders-tabel .tabel-cell:nth-child(4), .content .orders-tabel .tabel-cell:nth-child(5), .content .orders-tabel .tabel-cell:nth-child(7) {
+  flex: 2.5;
+}
+.content .orders-tabel .tabel-cell:nth-child(6), .content .orders-tabel .tabel-cell:nth-child(8), .content .orders-tabel .tabel-cell:nth-child(9) {
+  flex: 4;
+}
+
+/*# sourceMappingURL=orders.css.map */
