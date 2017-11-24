@@ -1,0 +1,148 @@
+.content{
+    margin-left: 70px;
+    .bankType{
+        height: 50px;
+        margin-bottom: 27px;
+        margin-top: 21px;
+    }  
+    .bankContent{
+        height: 70px;
+        margin-bottom: 27px;
+    }
+    .myBank{
+        text-align: left;
+    }
+}
+.bankType{
+    div{
+        width: 240px;
+        height: 50px;
+        border: 1px solid #ccc;
+        margin-right: 108px;
+        float: left;
+        line-height: 45px;
+        box-sizing: border-box;
+        padding-left: 68px;
+        text-align: left;
+        font-size: 24px;
+        background: url(../../images/back1.jpg) no-repeat 10px center;
+        &:nth-child(2){
+            background-image: url(../../images/back2.jpg);
+        }
+        &:nth-child(3){
+            background-image: url(../../images/back3.jpg);
+        }
+        &:nth-child(4){
+            background-image: url(../../images/back4.jpg);
+        }
+    }
+}
+.bankContent{
+    input{
+        border-radius: 5px;
+    }
+    .bankContentTop{
+        height: 20px;
+        margin-bottom: 26px;
+        span{
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            color: #000;
+            font-size: 14px;
+            text-align: right;
+            float: left;
+        }
+        select{
+            height: 20px;
+            width: auto;
+            width: 140px;
+            margin-right: 223px;
+            float: left;
+            border-radius: 5px;
+        }
+        input{
+            height: 20px;
+            width: 140px;
+            border: 1px solid #CCCCCC;
+            outline: none;
+            float: left;
+        }
+    }
+    .bankContentBtn{
+        height: 20px;
+        span{
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            color: #000;
+            font-size: 14px;
+            text-align: right;
+            float: left;
+        }
+        .number{
+            height: 20px;
+            width: 140px;
+            border: 1px solid #CCCCCC;
+            outline: none;
+            float: left;
+            margin-right: 260px;
+        }
+        .submit{
+            width: 110px;
+            height: 26px;
+            border:1px solid #1352c0;
+            background-color: #1867f0;
+            float: left;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+.myBank{
+    .bankTitle{
+        text-align: left;
+        font-size: 14px;
+        color: #000;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bankPrompt{
+        text-align: left;
+        font-size: 12px;
+        color: #585858;
+        font-style: initial;
+    }
+    .ultitle{
+        margin-top: 42px;
+        width: 1234px;
+        margin-left: 10px;
+        div{
+            width: 20%;
+            float: left;
+            font-size: 14px;
+            color:#000;
+        }
+    }
+    .Bankinfo{
+        margin-left: 10px;
+        width: 1234px;
+        li{
+            width: 100%;
+            height: 35px;
+            line-height: 45px;
+            font-size: 14px;
+            color: #555;
+            
+            div{
+                width: 20%;
+                float: left;
+            }
+            .del{
+                color: #0072fe;
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

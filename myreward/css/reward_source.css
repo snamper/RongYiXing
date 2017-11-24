@@ -1,51 +1,44 @@
-p, body {
+body {
   margin: 0;
 }
 
-.record {
+.source {
   width: 1200px;
   margin: 0 auto;
-  background: #fff;
   overflow: hidden;
-}
-.record .today {
-  margin-left: 98px;
-  font-size: 18px;
-  margin-bottom: 35px;
+  background: #FFF;
 }
 
 .data {
   padding-top: 60px;
-  padding-left: 68px;
-  margin-bottom: 45px;
-  position: relative;
+  margin-left: 68px;
+  margin-bottom: 65px;
 }
-.data .data_time,
-.data .data_txt {
-  width: 160px;
-  height: 33px;
-  border: 1px solid #7f7f7f;
-  text-align: center;
-  line-height: 30px;
-  font-size: 15px;
+.data .record_data,
+.data .reward_source {
   display: inline-block;
-  box-sizing: border-box;
+  font-size: 20px;
+  color: #3d3d3d;
 }
-.data .data_time {
-  height: 33px;
-  outline: none;
-  text-align: left;
-  padding-left: 10px;
-  padding-right: 25px;
+.data .type {
+  width: 160px;
+  height: 32px;
+  border: 1px solid #7f7f7f;
+  padding-left: 5px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
-.data i {
-  width: 10px;
-  height: 5px;
-  display: block;
-  background: url(../../images/reward_03.png) no-repeat;
-  position: absolute;
-  top: 75px;
-  left: 370px;
+.data .record_data {
+  margin-right: 100px;
+}
+.data .count {
+  font-size: 16px;
+}
+.data .time {
+  width: 88px;
+  height: 28px;
+  border: 1px solid #7f7f7f;
+  padding-left: 5px;
 }
 
 .reward_table {
@@ -55,6 +48,7 @@ p, body {
 .table {
   border-collapse: collapse;
   border: 1px solid #c7c7c7;
+  background: #f9f9f9;
   margin: 0 auto;
   width: 930px;
 }

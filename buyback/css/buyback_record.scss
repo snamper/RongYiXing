@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+.buyback_record{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    //padding-left: 68px;
+    .time,
+    .state{
+        margin-bottom: 26px;
+        label{
+            font-size: 14px;
+            padding-right: 10px;
+            
+        }
+        
+        input,
+        select{
+            width: 140px;
+            height: 20px;
+            font-size: 12px;
+            border: 1px solid #d8d8d8;
+            margin-right:234px ;
+            border-radius: 3px;
+        }
+        input{
+            width: 120px;
+            height: 14px;
+            padding: 2px 10px;
+        }
+    }
+    .query{
+        width: 78px;
+        height: 32px;
+        font-size: 14px;
+        color: #fff;
+        background: #1867f0;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+        margin-bottom: 24px;
+    }
+    .table{
+        border-collapse:collapse;
+        border: 1px solid #c7c7c7;
+        
+        th{
+            width: 180px;
+            font-size: 14px;
+            height: 34px;
+            line-height: 34px;
+            text-align: left;
+            padding-left: 10px;
+        }
+         th:nth-child(8),
+        th:nth-child(9),
+        th:nth-child(2),
+        th:nth-child(3),
+        th:nth-child(4),
+        th:nth-child(5){
+            width: 100px;
+        }
+        
+        td{
+            overflow: hidden;
+            word-break: break-word;
+            font-size: 12px;
+            height: 34px;
+            padding: 0 5px;
+        }
+    }
+    .page{
+        margin-top: 60px;
+        text-align: center;
+        position: relative;
+        div{
+            display: inline-block;
+        }
+        .empty,
+        .middle,
+        .right,
+        .left{
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            text-align: center;
+            border: 1px solid #737373;
+        }
+        .empty{
+            height: 23px;
+            margin-left: 20px;
+            position: absolute;
+            top: 13px;
+        }
+        p{
+            display: inline-block;
+            margin-left: 60px;
+            cursor: pointer;
+        }
+    }
+    
+}
