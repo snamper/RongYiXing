@@ -11,11 +11,11 @@ body {
 }
 
 .login {
-  width: 398px;
+  width: 380px;
   height: 487px;
   border: 1px solid #ccbfaf;
   background: #fff;
-  opacity: 0.6;
+  opacity: 0.7;
   position: absolute;
   left: 0;
   top: 0;
@@ -62,20 +62,17 @@ body {
 }
 .login input {
   width: 230px;
-  height: 28px;
+  height: 30px;
   outline: none;
   padding: 5px;
   color: #000;
   position: relative;
   padding-right: 45px;
+  border: 1px solid darkgray;
 }
 .login #username,
 .login #password {
   background: url(../../images/login_no.png) no-repeat 235px center;
-}
-.login input:focus {
-  height: 28px;
-  background-color: #f1eded;
 }
 .login #code {
   width: 130px;
@@ -97,4 +94,6 @@ body {
   border-radius: 28px;
   margin-top: 16px;
   width: 304px;
+  cursor: pointer;
+  padding: 0;
 }

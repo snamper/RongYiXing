@@ -21,6 +21,7 @@ body {
   height: 25px;
   background: url(../../images/recommend_show.png) no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 label {
