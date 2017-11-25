@@ -31,46 +31,46 @@ var tpl_header = `<header class="header">
 
 var tpl_menu = `<div class="menu">
                 <div class="menu-item item-city">城市：<span>广东省</span><span>深圳市</span></div>
-                <div :class="['menu-item', 'has-submenu', {open: index == 1}]" 
-                     @click="index = (index == 1 ? 0 : 1)">
+                <div :class="['menu-item', 'has-submenu', {open: itemIndex == 1}]" 
+                     @click="itemIndex = (itemIndex == 1 ? 0 : 1)">
                     <span class="item-text">市代理管理</span>
                     <div class="submenu">
-                        <a class="submenu-item">个人资料</a>
-                        <a class="submenu-item">修改密码</a>
+                        <a href="/RongYiXing/generration/personal_information.html" class="submenu-item">个人资料</a>
+                        <a href="/RongYiXing/generration/login_password.html" class="submenu-item">修改密码</a>
                     </div>
                 </div>
-                <div :class="['menu-item', 'has-submenu', {open: index == 2}]" 
-                     @click="index = (index == 2 ? 0 : 2)">
+                <div :class="['menu-item', 'has-submenu', {open: itemIndex == 2}]" 
+                     @click="itemIndex = (itemIndex == 2 ? 0 : 2)">
                     <span class="item-text">推荐管理</span>
                     <div class="submenu">
-                        <a class="submenu-item">推荐渠道商</a>
-                        <a class="submenu-item">推荐合伙人</a>
-                        <a class="submenu-item">推荐会员</a>
-                        <a class="submenu-item">推荐记录</a>
+                        <a href="/RongYiXing/recommend/recommend_channel_trader.html" class="submenu-item">推荐渠道商</a>
+                        <a href="/RongYiXing/recommend/recommend_partner.html" class="submenu-item">推荐合伙人</a>
+                        <a href="/RongYiXing/recommend/recommend_member.html" class="submenu-item">推荐会员</a>
+                        <a href="/RongYiXing/recommend/recommend_show.html" class="submenu-item">推荐记录</a>
                     </div>
                 </div>
-                <div :class="['menu-item', 'has-submenu', {open: index == 3}]"
-                     @click="index = (index == 3 ? 0 : 3)">
+                <div :class="['menu-item', 'has-submenu', {open: itemIndex == 3}]"
+                     @click="itemIndex = (itemIndex == 3 ? 0 : 3)">
                     <span class="item-text">我的奖励</span>
                     <div class="submenu">
-                        <a class="submenu-item">推荐组奖励</a>
-                        <a class="submenu-item">奖励记录</a>
+                        <a href="/RongYiXing/myreward/reward_source.html" class="submenu-item">推荐组奖励</a>
+                        <a href="/RongYiXing/myreward/reward_record.html" class="submenu-item">奖励记录</a>
                     </div>
                 </div>
-                <div :class="['menu-item', 'has-submenu', {open: index == 4}]"
-                     @click="index = (index == 4 ? 0 : 4)">
+                <div :class="['menu-item', 'has-submenu', {open: itemIndex == 4}]"
+                     @click="itemIndex = (itemIndex == 4 ? 0 : 4)">
                     <span class="item-text">订单管理</span>
                     <div class="submenu">
-                        <a href="/RongYiXing/orders/orders.html" class="submenu-item">订单查询</a>
+                        <a href="/RongYiXing/orders/orders.html" class="['submenu-item']">订单查询</a>
                     </div>
                 </div>
-                <div :class="['menu-item', 'has-submenu', {open: index == 5}]"
-                     @click="index = (index == 5 ? 0 : 5)">
+                <div :class="['menu-item', 'has-submenu', {open: itemIndex == 5}]"
+                     @click="itemIndex = (itemIndex == 5 ? 0 : 5)">
                     <span class="item-text">回购管理</span>
                     <div class="submenu">
-                        <a class="submenu-item">我要回购</a>
-                        <a class="submenu-item">回购记录</a>
-                        <a class="submenu-item">银行账户</a>
+                        <a href="/RongYiXing/buyback/buyback.html" class="submenu-item">我要回购</a>
+                        <a href="/RongYiXing/buyback/buyback_record.html" class="submenu-item">回购记录</a>
+                        <a href="/RongYiXing/buyback/bank_account.html" class="submenu-item">银行账户</a>
                     </div>
                 </div>
                 <div><a class="logout">退出登录</a></div>
@@ -94,16 +94,19 @@ var tpl_footer = `<footer class="footer">
 const instancePage = new Vue({
     el: '#root',
     data: {
-        itemIndex: 0,       //左侧菜单所选中项的索引
-        ordersData: []      //订单查询数据
+        ordersData: []    //订单查询数据
     },
     components: {
         'component-header': {
             template: tpl_header
         },
         'component-menu': {
-            template: tpl_menu,
-            props: ['index']
+            data: () => {
+                return {
+                    itemIndex: 0       //左侧菜单所选中项的索引
+                }
+            },
+            template: tpl_menu
         },
         'component-footer': {
             template: tpl_footer

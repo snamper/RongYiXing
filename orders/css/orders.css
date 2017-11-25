@@ -1,9 +1,7 @@
 .content {
-  font-size: 14px;
-  float: left;
   padding-top: 51px;
   padding-left: 68px;
-  padding-bottom: 370px!important;
+  height: 720px;
 }
 .content .form-group {
   text-align: left;
@@ -92,5 +90,3 @@
 .content .orders-tabel .tabel-cell:nth-child(6), .content .orders-tabel .tabel-cell:nth-child(8), .content .orders-tabel .tabel-cell:nth-child(9) {
   flex: 4;
 }
-
-/*# sourceMappingURL=orders.css.map */

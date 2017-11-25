@@ -1,21 +1,13 @@
-h2,
-body {
-  margin: 0;
-}
-
 .person_updata {
   width: 1200px;
   overflow: hidden;
   margin: 0 auto;
   background: #f7f7f7;
-  text-align: center;
 }
 
 .Head_portrait {
   width: 224px;
-  display: inline-block;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 40px auto;
 }
 .Head_portrait .head_img {
   width: 160px;
@@ -44,13 +36,13 @@ body {
 }
 
 .form {
-  width: 600px;
   margin: 28px auto;
 }
 
 .form-group {
   margin-top: 16px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .form-group h2 {
   width: 480px;
@@ -60,17 +52,24 @@ body {
   font-size: 20px;
   margin: auto;
   border-radius: 3px;
+  text-align: center;
 }
 .form-group input {
+  float: left;
   width: 350px;
   height: 30px;
   border-radius: 3px;
   border: 1px solid #4d4d4d;
 }
 .form-group label {
+  font-size: 16px;
+  float: left;
+  width: 474px;
+  height: 30px;
+  line-height: 30px;
   text-align: right;
-  display: inline-block;
-  width: 130px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 .form-group button {
   width: 114px;
@@ -88,4 +87,8 @@ body {
   height: 30px;
   color: #fff;
   text-decoration: none;
+}
+
+.buttons {
+  text-align: center;
 }

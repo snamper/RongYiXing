@@ -1,6 +1,7 @@
 .content {
   float: left;
   margin-left: 70px;
+  height: 720px;
 }
 .content .bankType {
   height: 50px;

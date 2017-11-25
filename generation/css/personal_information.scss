@@ -1,0 +1,122 @@
+h2,
+h1,
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.person{
+    width: 1200px;
+    margin: 0 auto;
+    background: #f7f7f7;
+}
+.person_infor{
+    width: 100%;
+    .person_item{
+        display: inline-block;
+       // width: 355px;
+        background: #fff;
+       // margin: 0 20px;  
+        margin-bottom: 20px;      
+        h1{
+            font-size: 22px;
+            padding: 40px 0;
+            text-align: center;
+        }
+        table{
+            //width: 100%;
+            table-layout:fixed;
+            border-collapse: collapse;
+            tr{
+                border-bottom: 1px solid #dedede;
+                height: 40px;
+            }
+            
+            td{
+                //width: 82px;
+                padding-left: 80px;
+                padding-right: 10px;
+            }
+            td:nth-child(2){
+                width: 200px;
+                overflow: hidden;
+                word-break: break-all;
+                padding: 0 10px;
+                
+            }
+        }
+//      table:nth-child(2),
+//      table:nth-child(1){
+//          td:nth-child(1){
+//              width: 50px;
+//              text-align: left;
+//          }
+//      }
+//      table:nth-child(3){
+//          
+//          td:nth-child(1){
+//              width: 82px;
+//              text-align: left;
+//              display: inline-block;
+//          }
+//      }
+    }
+}
+.update{
+    width: 998px;
+    height: 48px;
+    text-align: center;
+    background: #c0c0c0;
+    color: #fff;
+    line-height: 48px;
+    margin: auto;
+    border-radius: 3px;
+    margin-bottom: 46px;
+    a{
+        display: block;
+        width: 998px;
+        height: 48px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    i{
+        background: url(../../images/write.png) no-repeat;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 48px;
+    }
+}
+.photo_list{
+    overflow: hidden;
+    h1{
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .photo_item{
+        width: 160px;
+        float: left;
+        margin: 0 120px;
+        margin-bottom: 50px;
+        
+        h2{
+            text-align: center;
+            font-size: 16px;
+            margin-top: 28px;
+            margin-bottom: 19px;
+            font-weight: 500;
+            
+        }
+    }
+    .img{
+        width: 160px;
+        height: 200px;
+        background: #cccccc;
+    }
+}

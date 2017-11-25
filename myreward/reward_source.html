@@ -3,74 +3,84 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>奖励来源</title>
+		<link rel="stylesheet" href="/RongYiXing/css/common.css"/>
 		<link rel="stylesheet" href="/RongYiXing/myreward/css/reward_source.css" />
+		<script src="/RongYiXing/js/vue.js"></script>
 	</head>
 	<body>
-		<div class="source">
-			<div class="data">
-				<div class="reward_source">奖励来源</div>
-				<select class="type">
-					<option>我的渠道商</option>
-					<option>我的渠道商</option>
-					<option>我的渠道商</option>
-					<option>我的渠道商</option>
-				</select>
-				<div class="record_data">奖励日期</div>
-				
-					<span class="count">单日计算</span>
-					<select class="time">
-						<option>一天</option>
-						<option>一个月</option>
-						<option>半年</option>
-						<option>一年</option>
-					</select>
+	<div id="root">
+		<component-header></component-header>
+		<section class="main">
+			<component-menu></component-menu>
+			<div class="content">
+				<div class="source">
+					<div class="data">
+						<div class="reward_source">奖励来源</div>
+						<select class="type">
+							<option>我的渠道商</option>
+							<option>我的渠道商</option>
+							<option>我的渠道商</option>
+							<option>我的渠道商</option>
+						</select>
+						<div class="record_data">奖励日期</div>
+
+						<span class="count">单日计算</span>
+						<select class="time">
+							<option>一天</option>
+							<option>一个月</option>
+							<option>半年</option>
+							<option>一年</option>
+						</select>
+					</div>
+					<div class="reward_table">
+						<table class="table" border="1">
+							<tr>
+								<th>奖励日期</th>
+								<th></th>
+								<th>被推荐人</th>
+								<th>我的奖励</th>
+								<th>奖励比例</th>
+								<th>奖励来源</th>
+							</tr>
+							<tr>
+								<td>2017-01-12</td>
+								<td></td>
+								<td>渠道商ID:B002张三</td>
+								<td>10000</td>
+								<td></td>
+								<td>渠道商</td>
+							</tr>
+							<tr>
+								<td>2017-01-12</td>
+								<td></td>
+								<td>渠道商ID:B002张三</td>
+								<td>10000</td>
+								<td></td>
+								<td>渠道商</td>
+							</tr>
+							<tr>
+								<td>2017-01-12</td>
+								<td></td>
+								<td>渠道商ID:B002张三</td>
+								<td>10000</td>
+								<td></td>
+								<td>渠道商</td>
+							</tr>
+							<tr>
+								<td>2017-01-12</td>
+								<td></td>
+								<td>渠道商ID:B002张三</td>
+								<td>10000</td>
+								<td></td>
+								<td>渠道商</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
-			<div class="reward_table">
-				<table class="table" border="1">
-					<tr>
-						<th>奖励日期</th>
-						<th></th>
-						<th>被推荐人</th>
-						<th>我的奖励</th>
-						<th>奖励比例</th>
-						<th>奖励来源</th>
-					</tr>
-					<tr>
-						<td>2017-01-12</td>
-						<td></td>
-						<td>渠道商ID:B002张三</td>
-						<td>10000</td>
-						<td></td>
-						<td>渠道商</td>
-					</tr>
-					<tr>
-						<td>2017-01-12</td>
-						<td></td>
-						<td>渠道商ID:B002张三</td>
-						<td>10000</td>
-						<td></td>
-						<td>渠道商</td>
-					</tr>
-					<tr>
-						<td>2017-01-12</td>
-						<td></td>
-						<td>渠道商ID:B002张三</td>
-						<td>10000</td>
-						<td></td>
-						<td>渠道商</td>
-					</tr>
-					<tr>
-						<td>2017-01-12</td>
-						<td></td>
-						<td>渠道商ID:B002张三</td>
-						<td>10000</td>
-						<td></td>
-						<td>渠道商</td>
-					</tr>
-				</table>
-			</div>
-				
-			
-		</div>
+		</section>
+		<component-footer></component-footer>
+	</div>
+	<script src="/RongYiXing/js/common.js"></script>
 	</body>
 </html>
