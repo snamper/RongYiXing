@@ -8,10 +8,10 @@ var tpl_header = `<header class="header">
             <nav class="nav">
             <div class="nav-block">
                 <div class="nav-tab">
-                    <a href="#" class="nav-link home-link">首页</a>
+                    <a href="/RongYiXing/index.html" :class="['nav-link','home-link',{active: linkActive == 1}]">首页</a>
                 </div>
                 <div class="nav-tab">
-                    <a href="#" class="nav-link repo-link">我要回购</a>
+                    <a href="/RongYiXing/buyback/buyback.html" :class="['nav-link','repo-link',{active: linkActive == 2}]">我要回购</a>
                 </div>
                 <div class="nav-tab">
                     <a href="#" class="nav-link download-link">下载中心</a>
@@ -19,10 +19,10 @@ var tpl_header = `<header class="header">
                 <div class="nav-tab">
                     <a href="#" class="nav-link about-link">关于融益行</a>
                 </div>
-                <div class="nav-tab">
+                <div v-if="msgTagHide" class="nav-tab">
                     <a href="#" class="nav-link remind-link">消息提醒</a>
                 </div>
-                <div class="nav-tab">
+                <div v-if="quitTagHide" class="nav-tab">
                     <a href="#" class="nav-link quit-link">退出登陆</a>
                 </div>
             </div>
@@ -35,42 +35,54 @@ var tpl_menu = `<div class="menu">
                      @click="itemIndex = (itemIndex == 1 ? 0 : 1)">
                     <span class="item-text">市代理管理</span>
                     <div class="submenu">
-                        <a href="/RongYiXing/generration/personal_information.html" class="submenu-item">个人资料</a>
-                        <a href="/RongYiXing/generration/login_password.html" class="submenu-item">修改密码</a>
+                        <a href="/RongYiXing/generation/personal_information.html" 
+                            :class="['submenu-item',{active: isActivePage && linkActive == 1}]">个人资料</a>
+                        <a href="/RongYiXing/generation/modify_password.html"
+                            :class="['submenu-item',{active: isActivePage && linkActive == 2}]">修改密码</a>
                     </div>
                 </div>
                 <div :class="['menu-item', 'has-submenu', {open: itemIndex == 2}]" 
                      @click="itemIndex = (itemIndex == 2 ? 0 : 2)">
                     <span class="item-text">推荐管理</span>
                     <div class="submenu">
-                        <a href="/RongYiXing/recommend/recommend_channel_trader.html" class="submenu-item">推荐渠道商</a>
-                        <a href="/RongYiXing/recommend/recommend_partner.html" class="submenu-item">推荐合伙人</a>
-                        <a href="/RongYiXing/recommend/recommend_member.html" class="submenu-item">推荐会员</a>
-                        <a href="/RongYiXing/recommend/recommend_show.html" class="submenu-item">推荐记录</a>
+                        <a href="/RongYiXing/recommend/recommend_channel_trader.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 1}]">推荐渠道商</a>
+                        <a href="/RongYiXing/recommend/recommend_partner.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 2}]">推荐合伙人</a>
+                        <a href="/RongYiXing/recommend/recommend_member.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 3}]">推荐会员</a>
+                        <a href="/RongYiXing/recommend/recommend_show.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 4}]">推荐记录</a>
                     </div>
                 </div>
                 <div :class="['menu-item', 'has-submenu', {open: itemIndex == 3}]"
                      @click="itemIndex = (itemIndex == 3 ? 0 : 3)">
                     <span class="item-text">我的奖励</span>
                     <div class="submenu">
-                        <a href="/RongYiXing/myreward/reward_source.html" class="submenu-item">推荐组奖励</a>
-                        <a href="/RongYiXing/myreward/reward_record.html" class="submenu-item">奖励记录</a>
+                        <a href="/RongYiXing/myreward/reward_source.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 1}]">推荐组奖励</a>
+                        <a href="/RongYiXing/myreward/reward_record.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 2}]">奖励记录</a>
                     </div>
                 </div>
                 <div :class="['menu-item', 'has-submenu', {open: itemIndex == 4}]"
                      @click="itemIndex = (itemIndex == 4 ? 0 : 4)">
                     <span class="item-text">订单管理</span>
                     <div class="submenu">
-                        <a href="/RongYiXing/orders/orders.html" class="['submenu-item']">订单查询</a>
+                        <a href="/RongYiXing/orders/orders.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 1}]">订单查询</a>
                     </div>
                 </div>
                 <div :class="['menu-item', 'has-submenu', {open: itemIndex == 5}]"
                      @click="itemIndex = (itemIndex == 5 ? 0 : 5)">
                     <span class="item-text">回购管理</span>
                     <div class="submenu">
-                        <a href="/RongYiXing/buyback/buyback.html" class="submenu-item">我要回购</a>
-                        <a href="/RongYiXing/buyback/buyback_record.html" class="submenu-item">回购记录</a>
-                        <a href="/RongYiXing/buyback/bank_account.html" class="submenu-item">银行账户</a>
+                        <a href="/RongYiXing/buyback/buyback.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 1}]">我要回购</a>
+                        <a href="/RongYiXing/buyback/buyback_record.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 2}]">回购记录</a>
+                        <a href="/RongYiXing/buyback/bank_account.html"
+                         :class="['submenu-item',{active: isActivePage && linkActive == 3}]">银行账户</a>
                     </div>
                 </div>
                 <div><a class="logout">退出登录</a></div>
@@ -94,19 +106,39 @@ var tpl_footer = `<footer class="footer">
 const instancePage = new Vue({
     el: '#root',
     data: {
+        windowSize: 0,
         ordersData: []    //订单查询数据
     },
     components: {
         'component-header': {
+            props: {
+                linkActive: Number,
+                msgTag: {
+                    type: Boolean,
+                    default: true
+                },
+                quitTag: {
+                    type: Boolean,
+                    default: true
+                }
+            },
             template: tpl_header
         },
         'component-menu': {
-            data: () => {
+            props: ['index','linkActive'],
+            data: function(){
                 return {
-                    itemIndex: 0       //左侧菜单所选中项的索引
+                    initIndex: this.index || 0,      //左侧菜单所选中项的初始索引
+                    itemIndex: this.index || 0,       //左侧菜单所选中项的索引
+                    isActivePage: true
                 }
             },
-            template: tpl_menu
+            template: tpl_menu,
+            watch: {
+                itemIndex: function(nowValue, oldValue){
+                    this.isActivePage = nowValue == this.initIndex;
+                }
+            }
         },
         'component-footer': {
             template: tpl_footer
