@@ -6,6 +6,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   overflow: hidden;
+  background: #fff;
 }
 
 .container {
@@ -78,10 +79,15 @@ body {
   height: 34px;
   padding: 0 5px;
 }
+.container .table th:nth-child(2n+1),
+.container .table td:nth-child(2n+1) {
+  background-color: #f9f9f9;
+}
 .container .page {
   margin-top: 60px;
   text-align: center;
   position: relative;
+  padding-bottom: 95px;
 }
 .container .page div {
   display: inline-block;

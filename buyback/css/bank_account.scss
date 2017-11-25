@@ -1,4 +1,5 @@
 .content{
+    float: left;
     margin-left: 70px;
     .bankType{
         height: 50px;
@@ -117,6 +118,7 @@
         margin-top: 42px;
         width: 1234px;
         margin-left: 10px;
+        overflow: hidden;
         div{
             width: 20%;
             float: left;
@@ -133,6 +135,7 @@
             line-height: 45px;
             font-size: 14px;
             color: #555;
+            background: #F7F7F7;
             
             div{
                 width: 20%;

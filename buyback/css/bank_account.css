@@ -1,4 +1,5 @@
 .content {
+  float: left;
   margin-left: 70px;
 }
 .content .bankType {
@@ -115,6 +116,7 @@
   margin-top: 42px;
   width: 1234px;
   margin-left: 10px;
+  overflow: hidden;
 }
 .myBank .ultitle div {
   width: 20%;
@@ -132,6 +134,7 @@
   line-height: 45px;
   font-size: 14px;
   color: #555;
+  background: #F7F7F7;
 }
 .myBank .Bankinfo li div {
   width: 20%;

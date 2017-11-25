@@ -21,6 +21,7 @@ body {
 .query_result form {
   width: 600px;
   margin: 0 auto;
+  padding-bottom: 330px;
 }
 .query_result form .form-group {
   margin-bottom: 25px;

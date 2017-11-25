@@ -33,6 +33,7 @@ h1, p, body {
   width: 100%;
   padding-top: 36px;
   padding-left: 68px;
+  box-sizing: border-box;
 }
 .container .img {
   float: left;
@@ -62,8 +63,9 @@ h1, p, body {
 }
 
 .bottom {
-  margin-left: 130px;
+  padding-left: 130px;
   margin-top: 50px;
+  padding-bottom: 235px;
 }
 .bottom .profit {
   display: inline-block;
