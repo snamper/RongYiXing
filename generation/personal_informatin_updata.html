@@ -3,61 +3,80 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>个人资料修改</title>
-		<link rel="stylesheet" href="css/personal_information_updata.css" />
+		<link rel="stylesheet" href="/RongYiXing/css/common.css"/>
+		<link rel="stylesheet" href="/RongYiXing/generation/css/personal_information_updata.css" />
+		<script src="/RongYiXing/js/vue.js"></script>
 	</head>
 	<body>
-		<div class="person_updata">
-			<div class="Head_portrait">
-				<div class="head_img">
-					<img src="" title=""/>
+	<div id="root">
+		<component-header></component-header>
+		<section class="main">
+			<component-menu></component-menu>
+			<div class="content">
+				<div class="person_updata">
+					<div class="Head_portrait">
+						<div class="head_img">
+							<img src="" title=""/>
+						</div>
+						<div class="updata_img"><a href="personal_information_img.html">修改我的头像</a></div>
+					</div>
+					<div class="updata_infor">
+						<form class="form" novalidate>
+							<div class="form-group">
+								<h2>修改信息</h2>
+							</div>
+							<div class="form-group">
+								<label>联系电话:</label>
+								<input type="text" id="phone" name="phone" v-model.trim.number="phone" @change="phoneValidate"/>
+								<span class="validate-msg" v-text="validityMsg.phoneValidityMsg"></span>
+							</div>
+							<div class="form-group">
+								<label>开户银行:</label>
+								<input type="text" id="bank" name="bank"  v-model.trim="subbranchName" @change="bankNameValidate"/>
+								<span class="validate-msg" v-text="validityMsg.bankNameValidityMsg"></span>
+							</div>
+							<div class="form-group">
+								<label>开户支行:</label>
+								<input type="text" id="Branch" name="Branch" @change="subbranchNameValidate"/>
+								<span class="validate-msg" v-text="validityMsg.subbranchNameValidityMsg"></span>
+							</div>
+							<div class="form-group">
+								<label>开户名称:</label>
+								<input type="text" id="openname" name="openname" @change="accountNameValidate"/>
+								<span class="validate-msg" v-text="validityMsg.accountNameValidityMsg"></span>
+							</div>
+							<div class="form-group">
+								<label>银行账号:</label>
+								<input type="text" id="id" name="id" @change="bankAccountValidate"/>
+								<span class="validate-msg" v-text="validityMsg.bankAccountValidityMsg"></span>
+							</div>
+							<div class="form-group">
+								<label>负责人姓名:</label>
+								<input type="text" id="name" name="name" @change="principalNameValidate"/>
+								<span class="validate-msg" v-text="validityMsg.principalNameValidityMsg"></span>
+							</div>
+							<div class="form-group">
+								<label>负责人联系电话:</label>
+								<input type="text" id="lxrphone" name="lxrphone" @change="principalPhoneValidate"/>
+								<span class="validate-msg" v-text="validityMsg.principalPhoneValidityMsg"></span>
+							</div>
+							<div class="form-group">
+								<label>负责人身份证号:</label>
+								<input type="text" id="lxrID" name="lxrID" @change="idNumberValidate"/>
+								<span class="validate-msg" v-text="validityMsg.idNumberValidityMsg"></span>
+							</div>
+							<div class="form-group buttons">
+								<button><a href="#">完成修改</a></button>
+								<button>取消</button>
+							</div>
+						</form>
+					</div>
 				</div>
-				<div class="updata_img"><a href="personal_information_img.html">修改我的头像</a></div>
 			</div>
-			<div class="updata_infor">
-				
-				<form class="form">
-					<div class="form-group">
-						<h2>修改信息</h2>
-					</div>
-					<div class="form-group">
-						<label>联系电话：</label>
-						<input type="text" id="phone" name="phone" />
-					</div>
-					<div class="form-group">
-						<label>开户银行：</label>
-						<input type="text" id="bank" name="bank" />
-					</div>
-					<div class="form-group">
-						<label>开户支行：</label>
-						<input type="text" id="Branch" name="Branch" />
-					</div>
-					<div class="form-group">
-						<label>开户名称：</label>
-						<input type="text" id="openname" name="openname" />
-					</div>
-					<div class="form-group">
-						<label>银行账号：</label>
-						<input type="text" id="id" name="id" />
-					</div>
-					<div class="form-group">
-						<label>负责人姓名：</label>
-						<input type="text" id="name" name="name" />
-					</div>
-					<div class="form-group">
-						<label>负责人联系电话：</label>
-						<input type="text" id="lxrphone" name="lxrphone" />
-					</div>
-					<div class="form-group">
-						<label>负责人身份证号：</label>
-						<input type="text" id="lxrID" name="lxrID" />
-					</div>
-					<div class="form-group">
-						<button><a href="#">完成修改</a></button>
-						<button>取消</button>
-					</div>
-				</form>
-				
-			</div>
-		</div>
+		</section>
+		<component-footer></component-footer>
+	</div>
+	<script src="/RongYiXing/js/validator.js"></script>
+	<script src="/RongYiXing/js/common.js"></script>
 	</body>
 </html>

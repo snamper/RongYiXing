@@ -23,6 +23,7 @@ img {
 input, button {
   outline: none;
   border: none;
+  padding: 0;
 }
 
 .header {
@@ -89,8 +90,7 @@ input, button {
 
 .main {
   margin-top: 16px;
-  text-align: right;
-  overflwo: hidden;
+  overflow: hidden;
 }
 .main .menu {
   float: left;
@@ -100,6 +100,7 @@ input, button {
   margin-right: 1px;
   border-top: 1px solid #f5aa5e;
   border-bottom: 1px solid #f5aa5e;
+  text-align: right;
 }
 .main .menu-item {
   font-size: 24px;
@@ -123,6 +124,9 @@ input, button {
 }
 .main .menu .has-submenu.open .submenu {
   display: block;
+}
+.main .menu .has-submenu.open .active {
+  color: #f08519;
 }
 .main .menu .has-submenu.open:before {
   top: 30px;
@@ -166,6 +170,11 @@ input, button {
 .main .menu .logout:active {
   opacity: .8;
 }
+.main .content {
+  float: left;
+  font-size: 14px;
+  padding-bottom: 143px;
+}
 .main .submenu {
   display: none;
   padding: 6px 0;
@@ -184,6 +193,8 @@ input, button {
 
 .footer {
   height: 110px;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
   background: #e6e5e3;
   text-align: center;
   padding: 21px 0 12px;
@@ -213,6 +224,14 @@ input, button {
 .footer .links .logo img {
   width: 141px;
   height: 52px;
+}
+
+.validate-msg {
+  color: #f00;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=common.css.map */
