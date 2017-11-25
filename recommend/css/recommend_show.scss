@@ -11,6 +11,7 @@ body{
     padding-left: 90px;
     padding-right: 90px;
     padding-top: 90px;
+    margin-bottom: 100px;
     i{
         display: inline-block;
         width: 25px;
@@ -36,6 +37,7 @@ input[name="data"]{
     margin-right: 60px;
     padding-left: 10px;
     float: left;
+    border: 1px solid #B3B3B3;
 }
 input[name="search"]{
     width: 180px;
@@ -43,6 +45,7 @@ input[name="search"]{
     box-sizing: border-box;
     float: left;
     padding: 2px 5px;
+    border: 1px solid #B3B3B3;
 }
 .show_table{
     width: 1020px;
