@@ -1,0 +1,110 @@
+
+.content {
+  padding-top: 51px;
+  padding-left: 68px;
+
+  .form-group {
+    text-align: left;
+    margin-bottom: 24px;
+
+    label {
+      display: inline-block;
+      width: 84px;
+    }
+
+    input, .pay-state {
+      height: 22px;
+      border: 1px solid #d1d1d1;
+      border-radius: 4px;
+      padding-left: 14px;
+      box-sizing: border-box;
+    }
+
+    .username {
+      width: 214px;
+      margin-right: 163px;
+    }
+
+    .pay-state {
+      -webkit-appearance: none;
+      width: 129px;
+      outline: none;
+      position: relative;
+    }
+
+    .caret {
+      height: 5px;
+      width: 5px;
+      border: 1px solid #d3d3d3;
+      border-left: none;
+      border-top: none;
+      transform: rotate(45deg);
+      display: inline-block;
+      position: relative;
+      left: -45px;
+      top: -2px;
+    }
+
+    .datetime {
+      width: 152px;
+    }
+
+    .query-orders {
+      width: 91px;
+      height: 22px;
+      margin-left: 41px;
+      color: #fff;
+      background: #1867f0;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:active {
+        opacity: .8;
+      }
+    }
+  }
+
+  .orders-tabel {
+    width: 1330px;
+    border-right: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+    text-align: left;
+
+    .tabel-row {
+      display: flex;
+    }
+
+    .tabel-caption {
+      background: #f9f9f9;
+    }
+
+    .tabel-cell {
+      height: 35px;
+      line-height: 35px;
+      box-sizing: border-box;
+      padding-left: 12px;
+      border-top: 1px solid #c3c3c3;
+      border-left: 1px solid #c3c3c3;
+
+      &:nth-child(2n-1) {
+        background: #f9f9f9;
+      }
+
+      &:nth-child(1) {
+        flex: 5;
+      }
+
+      &:nth-child(2) {
+        flex: 3;
+      }
+
+      &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(7) {
+        flex: 2.5;
+      }
+
+      &:nth-child(6), &:nth-child(8), &:nth-child(9) {
+        flex: 4;
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+h1, p, body {
+  margin: 0;
+}
+
+.home_page {
+  width: 1200px;
+  margin: 0 auto;
+  background: #f7f7f7;
+  position: relative;
+}
+
+.right_list {
+  color: #f08519;
+  text-align: center;
+  width: 330px;
+  height: 225px;
+  background: url(../images/home_page.png) no-repeat;
+  position: absolute;
+  right: -340px;
+  top: 40px;
+}
+.right_list h1 {
+  font-size: 28px;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+.right_list p {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.container {
+  width: 100%;
+  padding-top: 36px;
+  padding-left: 68px;
+}
+.container .img {
+  float: left;
+  width: 180px;
+  height: 180px;
+  background: #b3b3b3;
+}
+.container .img img {
+  display: block;
+  height: 180px;
+}
+
+.form {
+  width: 400px;
+  margin: 0 auto;
+}
+.form .form-group {
+  margin-bottom: 22px;
+}
+.form .form-group label:nth-child(1) {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+.form .form-group label:nth-child(2) {
+  display: inline-block;
+}
+
+.bottom {
+  margin-left: 130px;
+  margin-top: 50px;
+}
+.bottom .profit {
+  display: inline-block;
+  width: 240px;
+  height: 100px;
+  border: 1px solid #acacac;
+  margin-right: 35px;
+}
+.bottom .profit div:nth-child(1) {
+  border-bottom: 1px solid #ACACAC;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.bottom .profit div:nth-child(2) {
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+}

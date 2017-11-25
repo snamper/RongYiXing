@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/RongYiXing/css/common.css"/>
+    <link rel="stylesheet" href="/RongYiXing/buyback/css/buyback.css">
+    <script src="/RongYiXing/js/vue.js"></script>
+    <title>我要回购</title>
+</head>
+<body>
+<div id="root">
+    <component-header></component-header>
+    <section class="main">
+        <component-menu></component-menu>
+        <div class="content">
+            <div class="buyBack">
+                <h3>我要回购</h3>
+                <div class="buyBack-body">
+                    <label>
+                        <p>回购类型:</p>
+                        <select>
+                            <option>代扣税</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p>回购金额:</p>
+                        <input type="text" />
+                    </label>
+                    <label>
+                        <p>手续费:</p>
+                        <span class="spanRed">5</span>(元)
+                    </label>
+                    <label>
+                        <p>银行类型:</p>
+                        <span>中国建设银行(民治支行)</span>
+                    </label>
+                    <label>
+                        <p>户名:</p>
+                        <span>程建国</span>
+                    </label>
+                    <label class="spanSty">
+                        <p>账号:</p>
+                        <span>6214677200001204840</span>
+                        <select>
+                            <option>选择账户</option>
+                        </select>
+                        <a>账户管理</a>
+                    </label>
+                </div>
+                <table width="600"  cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>发票号</td>
+                        <td>发票面额</td>
+                        <td>操作</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <td>合计</td>
+                        <td>0</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <div class="buyBack-info">
+                    <h4>温馨提示：</h4>
+                    <p>1.信使（不包含商家信使）、服务商、管理中心角色每天回购限额5000颗。</p>
+                    <p>2.商家、商家信使根据商家总营业额小于或等于5000万、5000万到1亿（含1亿）、大于1亿每天回购分别限额3万、5万、10万颗，且单笔限额5万颗。</p>
+                    <p>3.回购类型允许选择：</p><p> 1) 普通信使豆：指不需缴税的信使豆，任意时间允许回购。</p><p> 2) 待缴税信使豆：指需缴税的信使豆，任意时间允许回购。</p><p> 3) 提供发票信使豆：指需要提供发票的信使豆，发票号总面额须大于或等于回购信使豆数量，任意时间允许回购,发票仅接收增值税普通发票；发票寄送地址：深圳市南山区深南大道9996号松日鼎盛大厦21A；收件人：财务部；联系电话：0755-86717305转691。</p>
+                    <p>4.若回购待缴税信使豆，则扣取信使豆作为代扣税=回购信使豆*扣税比例（4.8%）。</p>
+                    <p>5.无论回购哪类信使豆，每次回购将扣除5颗信使豆作为手续费。</p>
+                    <p>6.回购申请单审核通过后，兑换金额将自动转入您的银行卡账户。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <component-footer></component-footer>
+</div>
+<script src="/RongYiXing/js/common.js"></script>
+</body>
+</html>

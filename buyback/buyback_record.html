@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>回购记录</title>
+		<link rel="stylesheet" href="/RongYiXing/css/common.css"/>
+		<link rel="stylesheet" href="/RongYiXing/buyback/css/buyback_record.css"/>
+		<script src="/RongYiXing/js/vue.js"></script>
+	</head>
+	<body>
+	<div id="root">
+		<component-header></component-header>
+		<section class="main">
+			<component-menu></component-menu>
+			<div class="content">
+				<div class="buyback_record">
+					<div class="container">
+						<div class="state">
+							<label>申请状态:</label>
+							<select>
+								<option>请选择审批类型</option>
+							</select>
+							<label>申请单号:</label>
+							<input type="text" />
+						</div>
+						<div class="time">
+							<label>申请时间:</label>
+							<input type="text" />
+
+							<label>回购状态:</label>
+							<select>
+								<option>请选择回购类型</option>
+							</select>
+
+						</div>
+						<div class="query">查询</div>
+						<div>
+							<table class="table" border="1">
+								<tr>
+									<th>订单申请号</th>
+									<th>回购类型</th>
+									<th>回购金额</th>
+									<th>手续费</th>
+									<th>实际到账</th>
+									<th>银行卡号</th>
+									<th>申请时间</th>
+									<th>审核状态</th>
+									<th>查看</th>
+								</tr>
+								<tr>
+									<td>DG51512222223565612556</td>
+									<td>可用待缴税会员豆</td>
+									<td>2300</td>
+									<td>5</td>
+									<td>2，5485.6</td>
+									<td>6263222262626262626266</td>
+									<td>2017-02-12<span>09:12:02</span></td>
+									<td>审核通过</td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>DG51512222223565612556</td>
+									<td>可用待缴税会员豆</td>
+									<td>2300</td>
+									<td>5</td>
+									<td>2，5485.6</td>
+									<td>6263222262626262626266</td>
+									<td>2017-02-12<span>09:12:02</span></td>
+									<td>审核通过 </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>DG51512222223565612556</td>
+									<td>可用待缴税会员豆</td>
+									<td>2300</td>
+									<td>5</td>
+									<td>2，5485.6</td>
+									<td>6263222262626262626266</td>
+									<td>2017-02-12<span>09:12:02</span></td>
+									<td>审核通过 </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>DG51512222223565612556</td>
+									<td>可用待缴税会员豆</td>
+									<td>2300</td>
+									<td>5</td>
+									<td>2，5485.6</td>
+									<td>6263222262626262626266</td>
+									<td>2017-02-12<span>09:12:02</span></td>
+									<td>审核通过 </td>
+									<td> </td>
+								</tr>
+							</table>
+						</div>
+						<div class="page">
+							<div class="left"><</div>
+							<div class="middle">1</div>
+							<div class="right">></div>
+							<input type="text" class="empty" >
+							<p>页    确认</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<component-footer></component-footer>
+	</div>
+	<script src="/RongYiXing/js/common.js"></script>
+	</body>
+</html>
