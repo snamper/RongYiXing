@@ -56,6 +56,15 @@
                 color: #737373;
             }
         }
+        .txt{
+            margin-top: 60px;
+        }
+        textarea{
+            width: 556px;
+            height: 154px;
+            resize: none;
+            padding: 15px;
+        }
         .spanSty{
             span{
                 margin-right: 80px;
@@ -69,10 +78,10 @@
             }
         }
     }
-    &-info{
-        max-width: 900px;
-        margin-top: 30px;
-        line-height: 28px;
-        color: #9d9d9d;
-    }
+//  &-info{
+//      max-width: 900px;
+//      margin-top: 30px;
+//      line-height: 28px;
+//      color: #9d9d9d;
+//  }
 }

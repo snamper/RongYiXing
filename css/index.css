@@ -11,10 +11,9 @@ h1, p, body {
 }
 
 .right_list {
-  color: #f08519;
   text-align: center;
-  width: 330px;
-  height: 225px;
+  width: 334px;
+  height: 233px;
   background: url(../images/home_page.png) no-repeat;
   position: absolute;
   right: -340px;
@@ -23,12 +22,15 @@ h1, p, body {
 .right_list h1 {
   font-size: 28px;
   font-weight: lighter;
-  padding-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 23px;
+  margin-bottom: 29px;
+  color: #f3a469;
 }
 .right_list p {
   font-size: 15px;
   margin-bottom: 6px;
+  color: #F08519;
+  font-weight: bolder;
 }
 .right_list p:nth-child(4) {
   margin-left: -56px;
