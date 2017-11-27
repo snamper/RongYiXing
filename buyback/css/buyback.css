@@ -54,6 +54,15 @@
   outline: none;
   color: #737373;
 }
+.buyBack-body .txt {
+  margin-top: 60px;
+}
+.buyBack-body textarea {
+  width: 556px;
+  height: 154px;
+  resize: none;
+  padding: 15px;
+}
 .buyBack-body .spanSty span {
   margin-right: 80px;
 }
@@ -63,10 +72,4 @@
 .buyBack-body .spanSty a {
   color: #1867f0;
   cursor: pointer;
-}
-.buyBack-info {
-  max-width: 900px;
-  margin-top: 30px;
-  line-height: 28px;
-  color: #9d9d9d;
 }

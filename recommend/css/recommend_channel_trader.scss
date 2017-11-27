@@ -21,7 +21,7 @@ h1,body{
 .form{
     margin: 0 auto;
     .form-group{
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
      label{
         text-align: right;
@@ -40,7 +40,7 @@ h1,body{
 .partner_photo{
     width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 95px;
     
     h2{
         font-size: 20px;
@@ -48,7 +48,7 @@ h1,body{
     }
 }
 .a-upload {
-    width: 480px;
+    width: 400px;
     height: 180px;
     line-height: 20px;
     position: relative;
@@ -59,11 +59,11 @@ h1,body{
     border-radius: 4px;
     overflow: hidden;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
 
 
     input{
-        width: 480px;
+        width: 400px;
         height: 180px;
         position: absolute;
         right: 0;
@@ -80,6 +80,7 @@ h1,body{
      p{
          font-size: 18px;
          margin-bottom: 22px;
+         color: #4D4D4D;
      }
      i{
          font-style: normal;
@@ -91,5 +92,7 @@ h1,body{
          background: #f7f7f7;
          border: 1px solid #b3b3b3;
          border-radius: 5px;
+         color: #4D4D4D;
+         font-size: 15px;
      }
 }

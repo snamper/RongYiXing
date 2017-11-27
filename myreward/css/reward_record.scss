@@ -12,52 +12,52 @@
     }
     
 }
-.date{
-    padding-top: 60px;
-    padding-left: 68px;
-    margin-bottom: 45px;
-    position: relative;
-    
-    .date_time,
-    .date_txt{
-        width: 160px;
-        height: 33px;
-        border: 1px solid #7f7f7f;
-        text-align: center;
-        line-height: 30px;
-        font-size: 15px;
-        display: inline-block;
-        
-        box-sizing: border-box;
-        
-    }
-    .date_time{
-        height: 33px;
-        outline: none;
-        text-align: left;
-        padding-left: 10px;
-        padding-right: 25px;
-        
-    }
-    i{
-        width: 10px;
-        height: 5px;
-        display: block;
-        background: url(../../images/reward_03.png) no-repeat;  
-        position: absolute;
-        top: 75px;
-        left: 370px;
-    }
-    
-}
+//.date{
+//  padding-top: 60px;
+//  padding-left: 68px;
+//  margin-bottom: 45px;
+//  position: relative;
+//  
+//  .date_time,
+//  .date_txt{
+//      width: 160px;
+//      height: 33px;
+//      border: 1px solid #7f7f7f;
+//      text-align: center;
+//      line-height: 30px;
+//      font-size: 15px;
+//      display: inline-block;
+//      
+//      box-sizing: border-box;
+//      
+//  }
+//  .date_time{
+//      height: 33px;
+//      outline: none;
+//      text-align: left;
+//      padding-left: 10px;
+//      padding-right: 25px;
+//      
+//  }
+//  i{
+//      width: 10px;
+//      height: 5px;
+//      display: block;
+//      background: url(../../images/reward_03.png) no-repeat;  
+//      position: absolute;
+//      top: 75px;
+//      left: 370px;
+//  }
+//  
+//}
 .reward_table{
     width: 100%;
 }
 .table{
      border-collapse:collapse;
      border: 1px solid #c7c7c7;
-     
-     margin: 0 auto;
+     margin-left: 68px;
+     margin-top: 73px;
      width: 930px;
      th:nth-child(1){
          width: 180px;
@@ -72,15 +72,20 @@
      th{
          text-align: left;
          height: 32px;
-         font-size: 14px;
+         font-size: 15px;
          font-weight: lighter;
          padding-left: 5px;
-         background: #f9f9f9;
+         background: #353535;
+         border-bottom: 2px solid #ccc;
+         background: #fff;
+         text-align: center;
      }
      td{
          font-size: 12px;
          height: 30px;
          padding-left: 5px;
+         text-align: center;
+         color: #353535;
 
        &:nth-child(2n-1){
          background: #f9f9f9;

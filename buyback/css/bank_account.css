@@ -59,9 +59,13 @@
   height: 20px;
   width: auto;
   width: 140px;
-  margin-right: 223px;
+  margin-right: 120px;
   float: left;
   border-radius: 5px;
+  padding-left: 10px;
+}
+.bankContent .bankContentTop .bank {
+  margin-right: 180px;
 }
 .bankContent .bankContentTop input {
   height: 20px;
@@ -69,6 +73,7 @@
   border: 1px solid #CCCCCC;
   outline: none;
   float: left;
+  padding-left: 10px;
 }
 .bankContent .bankContentBtn {
   height: 20px;

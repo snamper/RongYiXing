@@ -20,11 +20,14 @@ ul{
        // width: 355px;
         background: #fff;
        // margin: 0 20px;  
-        margin-bottom: 20px;      
+        margin-bottom: 18px;      
         h1{
-            font-size: 22px;
-            padding: 40px 0;
+            font-size: 24px;
+            //padding: 40px 0;
+            font-weight:lighter ;
             text-align: center;
+            padding-top: 44px;
+            padding-bottom: 60px;
         }
         table{
             //width: 100%;
@@ -32,12 +35,12 @@ ul{
             border-collapse: collapse;
             tr{
                 border-bottom: 1px solid #dedede;
-                height: 40px;
+                height: 45px;
             }
             
             td{
                 //width: 82px;
-                padding-left: 80px;
+                padding-left: 82px;
                 padding-right: 10px;
             }
             td:nth-child(2){
@@ -66,21 +69,22 @@ ul{
     }
 }
 .update{
-    width: 998px;
-    height: 48px;
+    width: 1000px;
+    height: 51px;
     text-align: center;
     background: #c0c0c0;
     color: #fff;
-    line-height: 48px;
+    line-height: 51px;
     margin: auto;
-    border-radius: 3px;
-    margin-bottom: 46px;
+    border-radius: 5px;
+    margin-bottom: 45px;
     a{
         display: block;
         width: 998px;
         height: 48px;
         text-decoration: none;
         color: #fff;
+        font-size: 19px;
     }
     
     i{
@@ -96,7 +100,7 @@ ul{
     overflow: hidden;
     h1{
         text-align: center;
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 500;
     }
     .photo_item{
@@ -108,8 +112,8 @@ ul{
         h2{
             text-align: center;
             font-size: 16px;
-            margin-top: 28px;
-            margin-bottom: 19px;
+            margin-top: 26px;
+            margin-bottom: 21px;
             font-weight: 500;
             
         }
