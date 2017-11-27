@@ -30,9 +30,10 @@ input,button{
   height: 136px;
 
   &-block{
-    width: 1200px;
+    width: 1110px;
     margin: 0 auto;
     overflow: hidden;
+    padding-right: 90px;
 
     .logo{
       float: left;
@@ -59,18 +60,32 @@ input,button{
   &-block{
     width: 1200px;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
 
     .nav-tab{
-      float: left;
-      width: 200px;
+      flex: 1;
       margin: 8px 0;
+      padding-left: 68px;
 
       .nav-link{
         padding-left: 30px;
-        color: #fff;
+        color: #fbdfcd;
         background-repeat: no-repeat;
         background-position: 0 center;
+        position: relative;
+
+        &.active{
+          color: #fff;
+
+          &:before{
+            content: '';
+            width: 100%;
+            border-top: 1px solid #fff;
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+          }
+        }
       }
 
       .home-link{
@@ -184,6 +199,7 @@ input,button{
       margin: 0 auto;
       border-radius: 5px;
       background: #f08519;
+      color: #fff;
       position: relative;
       top: 70px;
       cursor: pointer;
@@ -197,7 +213,6 @@ input,button{
   .content {
     float: left;
     font-size: 14px;
-    padding-bottom: 143px;
   }
 
   .submenu{
@@ -226,10 +241,6 @@ input,button{
   background: #e6e5e3;
   text-align: center;
   padding: 21px 0 12px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
   color: #464646;
 
   .links{
