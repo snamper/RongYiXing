@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="/RongYiXing/css/common.css"/>
 		<link rel="stylesheet" href="/RongYiXing/buyback/css/buyback_record.css"/>
 		<script src="/RongYiXing/js/vue.js"></script>
+		<script src="/RongYiXing/lib/layDate/laydate/laydate.js"></script>
 	</head>
 	<body>
 	<div id="root">
@@ -25,7 +26,7 @@
 						</div>
 						<div class="time">
 							<label>申请时间:</label>
-							<input type="text" />
+							<input type="text" id="datetime"/>
 
 							<label>回购状态:</label>
 							<select>
@@ -107,5 +108,12 @@
 		<component-footer></component-footer>
 	</div>
 	<script src="/RongYiXing/js/common.js"></script>
+	<script>
+		laydate.render({
+			elem: '#datetime',
+			type: 'datetime',
+			format: 'yyyy-MM-dd HH:MM:ss'
+		});
+	</script>
 	</body>
 </html>

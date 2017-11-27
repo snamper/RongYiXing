@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="/RongYiXing/css/common.css"/>
 		<link rel="stylesheet" href="/RongYiXing/myreward/css/reward_record.css" />
 		<script src="/RongYiXing/js/vue.js"></script>
+		<script src="/RongYiXing/lib/layDate/laydate/laydate.js"></script>
 	</head>
 	<body>
 	<div id="root">
@@ -14,9 +15,9 @@
 			<component-menu :index="3" :link-active="2"></component-menu>
 			<div class="content">
 				<div class="record">
-					<div class="data">
-						<div class="data_txt">日期</div>
-						<input type="text" class="data_time" /><i></i>
+					<div class="date">
+						<div class="date_txt">日期</div>
+						<input type="text" class="date_time" id="datetime"/><i></i>
 					</div>
 					<p class="today">今日奖励：总值<span>10005</span></p>
 					<div class="reward_table">
@@ -61,5 +62,12 @@
 		<component-footer></component-footer>
 	</div>
 	<script src="/RongYiXing/js/common.js"></script>
+	<script>
+		laydate.render({
+			elem: '#datetime',
+			type: 'date',
+			format: 'yyyy-MM-dd'
+		});
+	</script>
 	</body>
 </html>

@@ -1,22 +1,11 @@
-body, ul, p, li, h1, h2, h3, h4, h5 {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 .buyBack {
-  padding: 20px;
+  padding: 46px 0 105px 68px;
+  color: #737373;
 }
 .buyBack h3 {
   display: inline-block;
   font-size: 24px;
+  font-weight: 400;
   color: #595959;
   padding-bottom: 2px;
   border-bottom: 2px solid #595959;
@@ -63,6 +52,7 @@ a {
   width: 148px;
   border-radius: 3px;
   outline: none;
+  color: #737373;
 }
 .buyBack-body .spanSty span {
   margin-right: 80px;
@@ -71,12 +61,12 @@ a {
   margin-right: 20px;
 }
 .buyBack-body .spanSty a {
-  color: #1205ce;
+  color: #1867f0;
   cursor: pointer;
 }
 .buyBack-info {
   max-width: 900px;
   margin-top: 30px;
   line-height: 28px;
-  color: #666;
+  color: #9d9d9d;
 }

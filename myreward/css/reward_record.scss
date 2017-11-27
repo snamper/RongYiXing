@@ -1,6 +1,3 @@
-p,body{
-    margin: 0;
-}
 .record{
     width: 1200px;
     margin: 0 auto;
@@ -15,14 +12,14 @@ p,body{
     }
     
 }
-.data{
+.date{
     padding-top: 60px;
     padding-left: 68px;
     margin-bottom: 45px;
     position: relative;
     
-    .data_time,
-    .data_txt{
+    .date_time,
+    .date_txt{
         width: 160px;
         height: 33px;
         border: 1px solid #7f7f7f;
@@ -34,7 +31,7 @@ p,body{
         box-sizing: border-box;
         
     }
-    .data_time{
+    .date_time{
         height: 33px;
         outline: none;
         text-align: left;
@@ -67,18 +64,10 @@ p,body{
      }
      th:nth-child(2){
          width: 108px;
-     }
-      th:nth-child(3){
+
+       ~ th{
          width: 150px;
-     }
-      th:nth-child(4){
-         width: 150px;
-     }
-      th:nth-child(5){
-         width: 150px;
-     }
-     th:nth-child(6){
-         width: 150px;
+       }
      }
      th{
          text-align: left;
@@ -86,10 +75,15 @@ p,body{
          font-size: 14px;
          font-weight: lighter;
          padding-left: 5px;
+         background: #f9f9f9;
      }
      td{
          font-size: 12px;
          height: 30px;
          padding-left: 5px;
+
+       &:nth-child(2n-1){
+         background: #f9f9f9;
+       }
      }
 }

@@ -121,13 +121,14 @@ input,button{
 
   .menu{
     float: left;
-    width: 360px;
+    width: 350px;
     color: #fff;
     background: #f08519;
     margin-right: 1px;
-    border-top: 1px solid #f5aa5e;
-    border-bottom: 1px solid #f5aa5e;
+    border: 1px solid #f5aa5e;
+    border-left: none;
     text-align: right;
+    position: relative;
 
     &-item{
       font-size: 24px;
@@ -200,9 +201,11 @@ input,button{
       border-radius: 5px;
       background: #f08519;
       color: #fff;
-      position: relative;
-      top: 70px;
+      position: absolute;
       cursor: pointer;
+      bottom: -70px;
+      left: 0;
+      right: 0;
 
       &:active{
         opacity: .8;
