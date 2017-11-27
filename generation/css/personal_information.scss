@@ -17,34 +17,52 @@ ul{
     width: 100%;
     .person_item{
         display: inline-block;
-        width: 355px;
+       // width: 355px;
         background: #fff;
-        margin: 0 20px;  
-         margin-bottom: 20px;      
+       // margin: 0 20px;  
+        margin-bottom: 20px;      
         h1{
             font-size: 22px;
             padding: 40px 0;
             text-align: center;
         }
         table{
-            width: 100%;
+            //width: 100%;
             table-layout:fixed;
             border-collapse: collapse;
             tr{
-                border-bottom: 1px solid #ededed;
+                border-bottom: 1px solid #dedede;
                 height: 40px;
             }
-            td:nth-child(1){
-                width: 150px;
-                text-align: right;
+            
+            td{
+                //width: 82px;
+                padding-left: 80px;
+                padding-right: 10px;
             }
             td:nth-child(2){
-                width: 185px;
+                width: 200px;
                 overflow: hidden;
-                word-wrap:break-word;
+                word-break: break-all;
                 padding: 0 10px;
+                
             }
         }
+//      table:nth-child(2),
+//      table:nth-child(1){
+//          td:nth-child(1){
+//              width: 50px;
+//              text-align: left;
+//          }
+//      }
+//      table:nth-child(3){
+//          
+//          td:nth-child(1){
+//              width: 82px;
+//              text-align: left;
+//              display: inline-block;
+//          }
+//      }
     }
 }
 .update{

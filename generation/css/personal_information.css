@@ -21,9 +21,7 @@ ul {
 }
 .person_infor .person_item {
   display: inline-block;
-  width: 355px;
   background: #fff;
-  margin: 0 20px;
   margin-bottom: 20px;
 }
 .person_infor .person_item h1 {
@@ -32,22 +30,21 @@ ul {
   text-align: center;
 }
 .person_infor .person_item table {
-  width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 }
 .person_infor .person_item table tr {
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #dedede;
   height: 40px;
 }
-.person_infor .person_item table td:nth-child(1) {
-  width: 150px;
-  text-align: right;
+.person_infor .person_item table td {
+  padding-left: 80px;
+  padding-right: 10px;
 }
 .person_infor .person_item table td:nth-child(2) {
-  width: 185px;
+  width: 200px;
   overflow: hidden;
-  word-wrap: break-word;
+  word-break: break-all;
   padding: 0 10px;
 }
 

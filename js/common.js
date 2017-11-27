@@ -19,11 +19,11 @@ var tpl_header = `<header class="header">
                 <div class="nav-tab">
                     <a href="#" class="nav-link about-link">关于融益行</a>
                 </div>
-                <div v-if="msgTagHide" class="nav-tab">
+                <div v-if="msgTag" class="nav-tab">
                     <a href="#" class="nav-link remind-link">消息提醒</a>
                 </div>
-                <div v-if="quitTagHide" class="nav-tab">
-                    <a href="#" class="nav-link quit-link">退出登陆</a>
+                <div v-if="quitTag" class="nav-tab">
+                    <a href="/RongYiXing/login/login.html" class="nav-link quit-link">退出登陆</a>
                 </div>
             </div>
         </nav>
@@ -85,7 +85,7 @@ var tpl_menu = `<div class="menu">
                          :class="['submenu-item',{active: isActivePage && linkActive == 3}]">银行账户</a>
                     </div>
                 </div>
-                <div><a class="logout">退出登录</a></div>
+                <div><a href="/RongYiXing/login/login.html" class="logout">退出登录</a></div>
             </div>`;
 
 var tpl_footer = `<footer class="footer">

@@ -8,13 +8,12 @@ body {
   width: 1200px;
   background: #F7F7F7;
   margin: 0 auto;
-  height: 800px;
 }
 
 .member_main {
   width: 100%;
   text-align: center;
-  padding-bottom: 370px;
+  padding-bottom: 50px;
 }
 .member_main h1 {
   font-size: 22px;

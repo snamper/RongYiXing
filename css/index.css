@@ -7,6 +7,7 @@ h1, p, body {
   margin: 0 auto;
   background: #f7f7f7;
   position: relative;
+  min-height: 900px;
 }
 
 .right_list {
@@ -21,6 +22,7 @@ h1, p, body {
 }
 .right_list h1 {
   font-size: 28px;
+  font-weight: lighter;
   padding-top: 25px;
   margin-bottom: 25px;
 }
@@ -28,11 +30,15 @@ h1, p, body {
   font-size: 15px;
   margin-bottom: 6px;
 }
+.right_list p:nth-child(4) {
+  margin-left: -56px;
+}
 
 .container {
   width: 100%;
   padding-top: 36px;
   padding-left: 68px;
+  box-sizing: border-box;
 }
 .container .img {
   float: left;
@@ -62,7 +68,7 @@ h1, p, body {
 }
 
 .bottom {
-  margin-left: 130px;
+  padding-left: 130px;
   margin-top: 50px;
 }
 .bottom .profit {
@@ -82,4 +88,5 @@ h1, p, body {
   height: 65px;
   line-height: 65px;
   text-align: center;
+  font-size: 22px;
 }

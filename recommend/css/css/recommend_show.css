@@ -1,7 +1,3 @@
-body {
-  margin: 0;
-}
-
 .show {
   width: 1200px;
   background: #F7F7F7;
@@ -13,7 +9,7 @@ body {
   padding-left: 90px;
   padding-right: 90px;
   padding-top: 90px;
-  margin-bottom: 100px;
+  padding-bottom: 60px;
 }
 .show_time i {
   display: inline-block;
@@ -40,9 +36,7 @@ input[name="data"] {
   height: 25px;
   box-sizing: border-box;
   margin-right: 60px;
-  padding-left: 10px;
   float: left;
-  border: 1px solid #B3B3B3;
 }
 
 input[name="search"] {
@@ -51,14 +45,12 @@ input[name="search"] {
   box-sizing: border-box;
   float: left;
   padding: 2px 5px;
-  border: 1px solid #B3B3B3;
 }
 
 .show_table {
   width: 1020px;
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 448px;
 }
 .show_table .show_table_item {
   float: left;

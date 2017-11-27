@@ -2,15 +2,18 @@ body{
     margin: 0;
 }
 .buyback_record{
-    width: 1200px;
+   // width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    background: #fff;
+    height: 720px;
+    
 }
 .container{
     width: 100%;
     box-sizing: border-box;
     padding-top: 50px;
-    //padding-left: 68px;
+    padding-left: 68px;
     .time,
     .state{
         margin-bottom: 26px;
@@ -75,11 +78,16 @@ body{
             height: 34px;
             padding: 0 5px;
         }
+        th,
+        td:nth-child(2n+1){
+            background-color: #f9f9f9;
+        }
     }
     .page{
         margin-top: 60px;
         text-align: center;
         position: relative;
+        padding-bottom: 95px;
         div{
             display: inline-block;
         }
@@ -94,10 +102,10 @@ body{
             border: 1px solid #737373;
         }
         .empty{
-            height: 23px;
+            height: 24px;
             margin-left: 20px;
             position: absolute;
-            top: 13px;
+            top: 0px;
         }
         p{
             display: inline-block;
