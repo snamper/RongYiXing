@@ -32,6 +32,36 @@ h1,p,body{
     p:nth-child(4){
         margin-left: -56px;
     }
+
+    .open-notice{
+        font-size: 16px;
+        width: 20px;
+        height: 60px;
+        padding: 8px 4px 12px 12px;
+        background: #FAF6EF;
+        border-radius: 5px 0 0 5px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -36px;
+        margin: auto;
+        z-index: 100;
+        cursor: pointer;
+        display: none;
+
+        &:before{
+            content: '';
+            height: 0;
+            border: 6px solid transparent;
+            border-right-color: #f08519;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -2px;
+            margin: auto;
+        }
+    }
+
 }
 .container{
     width: 100%;
@@ -90,3 +120,23 @@ h1,p,body{
     }
 }
 
+@media screen and (max-width: 1900px){
+
+    .home_page{
+        position: static;
+
+        .right_list{
+            top: 192px;
+            right: -330px;
+            transition: right .5s;
+
+            &.open{
+                right: 0;
+            }
+
+            .open-notice{
+                display: block;
+            }
+        }
+    }
+}

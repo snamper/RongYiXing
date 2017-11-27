@@ -1,18 +1,10 @@
-body{
-    margin: 0;
-}
 .buyback_record{
-   // width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
     background: #fff;
     height: 720px;
-    
+    padding-top: 50px;
 }
 .container{
-    width: 100%;
-    box-sizing: border-box;
-    padding-top: 50px;
     padding-left: 68px;
     .time,
     .state{
@@ -61,6 +53,7 @@ body{
         margin-bottom: 24px;
     }
     .table{
+        width: 1330px;
         border-collapse:collapse;
         border: 1px solid #c7c7c7;
         
@@ -123,5 +116,10 @@ body{
             cursor: pointer;
         }
     }
-    
+}
+
+@media screen and (max-width: 1680px){
+    .container{
+        padding-left: 0;
+    }
 }

@@ -1,6 +1,7 @@
 body {
   font-family: "Microsoft YaHei";
   margin: 0;
+  overflow: hidden;
 }
 
 ul, h1, h2, h3, h4, h5, h6, p {
@@ -85,36 +86,63 @@ input, button {
 .nav-block .nav-tab .home-link {
   background-image: url(../images/home_icon.png);
 }
+.nav-block .nav-tab .home-link.active {
+  background-image: url(../images/home_active_icon.png);
+}
 .nav-block .nav-tab .repo-link {
   background-image: url(../images/repo_icon.png);
+}
+.nav-block .nav-tab .repo-link.active {
+  background-image: url(../images/repo_active_icon.png);
 }
 .nav-block .nav-tab .download-link {
   background-image: url(../images/download_icon.png);
 }
+.nav-block .nav-tab .download-link.active {
+  background-image: url(../images/download_active_icon.png);
+}
 .nav-block .nav-tab .about-link {
   background-image: url(../images/about_icon.png);
+}
+.nav-block .nav-tab .about-link.active {
+  background-image: url(../images/about_active_icon.png);
 }
 .nav-block .nav-tab .remind-link {
   background-image: url(../images/remind_icon.png);
 }
+.nav-block .nav-tab .remind-link.active {
+  background-image: url(../images/remind_active_icon.png);
+}
 .nav-block .nav-tab .quit-link {
   background-image: url(../images/quit_icon.png);
 }
+.nav-block .nav-tab .quit-link.active {
+  background-image: url(../images/quit_active_icon.png);
+}
 
 .main {
-  margin-top: 16px;
-  overflow: hidden;
+  position: relative;
+  width: 1200px;
+  margin: 16px auto 0;
+}
+.main .content {
+  font-size: 14px;
 }
 .main .menu {
-  float: left;
-  width: 350px;
+  width: 359px;
   color: #fff;
   background: #f08519;
   margin-right: 1px;
   border: 1px solid #f5aa5e;
   border-left: none;
   text-align: right;
-  position: relative;
+  position: absolute;
+  left: -360px;
+  z-index: 100;
+  transition: left .5s;
+}
+.main .menu.open {
+  left: 0;
 }
 .main .menu-item {
   font-size: 24px;
@@ -127,7 +155,7 @@ input, button {
 }
 .main .menu .has-submenu .item-text {
   display: block;
-  padding-right: 144px;
+  padding-right: 140px;
   position: relative;
   top: -5px;
 }
@@ -164,7 +192,7 @@ input, button {
 }
 .main .menu .item-city {
   font-size: 18px;
-  padding: 38px 121px 16px 0;
+  padding: 38px 115px 16px 0;
   margin-bottom: 52px;
 }
 .main .menu .logout {
@@ -187,10 +215,6 @@ input, button {
 .main .menu .logout:active {
   opacity: .8;
 }
-.main .content {
-  float: left;
-  font-size: 14px;
-}
 .main .submenu {
   display: none;
   padding: 6px 0;
@@ -205,6 +229,32 @@ input, button {
 }
 .main .submenu-item:hover {
   color: #f08519;
+}
+.main .open-menu {
+  width: 20px;
+  height: 42px;
+  padding: 20px 16px 20px 2px;
+  background: #f08519;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -38px;
+  margin: auto;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+.main .open-menu:before {
+  content: '';
+  height: 0;
+  border: 6px solid transparent;
+  border-left-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2px;
+  margin: auto;
 }
 
 .footer {
@@ -244,6 +294,15 @@ input, button {
   height: 30px;
   line-height: 30px;
   padding-left: 10px;
+}
+
+@media screen and (max-width: 1900px) {
+  .main {
+    position: static;
+  }
+  .main .menu .open-menu {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=common.css.map */

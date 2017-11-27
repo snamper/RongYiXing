@@ -1,12 +1,6 @@
 .content {
-  float: left;
   margin-left: 70px;
   height: 720px;
-}
-.content .bankType {
-  height: 50px;
-  margin-bottom: 27px;
-  margin-top: 21px;
 }
 .content .bankContent {
   height: 70px;
@@ -16,11 +10,17 @@
   text-align: left;
 }
 
+.bankType {
+  width: 1278px;
+  height: 50px;
+  margin-bottom: 27px;
+  margin-top: 21px;
+}
 .bankType div {
   width: 240px;
   height: 50px;
   border: 1px solid #ccc;
-  margin-right: 108px;
+  margin-right: 106px;
   float: left;
   line-height: 45px;
   box-sizing: border-box;
@@ -37,6 +37,7 @@
 }
 .bankType div:nth-child(4) {
   background-image: url(../../images/back4.jpg);
+  margin: 0;
 }
 
 .bankContent input {
@@ -56,9 +57,8 @@
   float: left;
 }
 .bankContent .bankContentTop select {
-  height: 20px;
-  width: auto;
-  width: 140px;
+  height: 22px;
+  width: 142px;
   margin-right: 223px;
   float: left;
   border-radius: 5px;
@@ -113,10 +113,12 @@
   color: #585858;
   font-style: initial;
 }
-.myBank .ultitle {
-  margin-top: 42px;
+.myBank .ultitle, .myBank .Bankinfo {
   width: 1234px;
   margin-left: 10px;
+}
+.myBank .ultitle {
+  margin-top: 42px;
   overflow: hidden;
 }
 .myBank .ultitle div {
@@ -124,10 +126,6 @@
   float: left;
   font-size: 14px;
   color: #000;
-}
-.myBank .Bankinfo {
-  margin-left: 10px;
-  width: 1234px;
 }
 .myBank .Bankinfo li {
   width: 100%;

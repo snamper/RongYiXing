@@ -29,7 +29,7 @@ var tpl_header = `<header class="header">
         </nav>
         </header>`;
 
-var tpl_menu = `<div class="menu">
+var tpl_menu = `<div :class="['menu',{open: openMenu}]">
                 <div class="menu-item item-city">城市：<span>广东省</span><span>深圳市</span></div>
                 <div :class="['menu-item', 'has-submenu', {open: itemIndex == 1}]" 
                      @click="itemIndex = (itemIndex == 1 ? 0 : 1)">
@@ -47,12 +47,10 @@ var tpl_menu = `<div class="menu">
                     <div class="submenu">
                         <a href="/RongYiXing/recommend/recommend_channel_trader.html"
                          :class="['submenu-item',{active: isActivePage && linkActive == 1}]">推荐渠道商</a>
-                        <a href="/RongYiXing/recommend/recommend_partner.html"
-                         :class="['submenu-item',{active: isActivePage && linkActive == 2}]">推荐合伙人</a>
                         <a href="/RongYiXing/recommend/recommend_member.html"
-                         :class="['submenu-item',{active: isActivePage && linkActive == 3}]">推荐会员</a>
+                         :class="['submenu-item',{active: isActivePage && linkActive == 2}]">推荐会员</a>
                         <a href="/RongYiXing/recommend/recommend_show.html"
-                         :class="['submenu-item',{active: isActivePage && linkActive == 4}]">推荐记录</a>
+                         :class="['submenu-item',{active: isActivePage && linkActive == 3}]">推荐记录</a>
                     </div>
                 </div>
                 <div :class="['menu-item', 'has-submenu', {open: itemIndex == 3}]"
@@ -86,6 +84,7 @@ var tpl_menu = `<div class="menu">
                     </div>
                 </div>
                 <div><a href="/RongYiXing/login/login.html" class="logout">退出登录</a></div>
+                <a class="open-menu" @click="openMenu = !openMenu">菜单</a>
             </div>`;
 
 var tpl_footer = `<footer class="footer">
@@ -107,7 +106,8 @@ const instancePage = new Vue({
     el: '#root',
     data: {
         windowSize: 0,
-        ordersData: []    //订单查询数据
+        ordersData: [],     //订单查询数据
+        openNotice: false   //打开公告栏
     },
     components: {
         'component-header': {
@@ -128,9 +128,10 @@ const instancePage = new Vue({
             props: ['index','linkActive'],
             data: function(){
                 return {
-                    initIndex: this.index || 0,      //左侧菜单所选中项的初始索引
-                    itemIndex: this.index || 0,       //左侧菜单所选中项的索引
-                    isActivePage: true
+                    initIndex: this.index || 0,       //菜单所选中项的初始索引
+                    itemIndex: this.index || 0,       //菜单所选中项的索引
+                    isActivePage: true,
+                    openMenu: false                   //打开菜单
                 }
             },
             template: tpl_menu,

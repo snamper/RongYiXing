@@ -56,7 +56,7 @@
   opacity: .8;
 }
 .content .orders-tabel {
-  width: 1330px;
+  width: 1328px;
   border-right: 1px solid #c3c3c3;
   border-bottom: 1px solid #c3c3c3;
   text-align: left;
@@ -71,7 +71,7 @@
   height: 35px;
   line-height: 35px;
   box-sizing: border-box;
-  padding-left: 12px;
+  padding-left: 10px;
   border-top: 1px solid #c3c3c3;
   border-left: 1px solid #c3c3c3;
 }
@@ -89,6 +89,15 @@
 }
 .content .orders-tabel .tabel-cell:nth-child(6), .content .orders-tabel .tabel-cell:nth-child(8), .content .orders-tabel .tabel-cell:nth-child(9) {
   flex: 4;
+}
+
+@media screen and (max-width: 1680px) {
+  .content {
+    padding-left: 0;
+  }
+  .content .orders-tabel {
+    width: 1130px;
+  }
 }
 
 /*# sourceMappingURL=orders.css.map */
