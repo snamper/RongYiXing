@@ -26,11 +26,21 @@ body{
         input,
         select{
             width: 140px;
-            height: 20px;
+            height: 22px;
             font-size: 12px;
             border: 1px solid #d8d8d8;
             margin-right:234px ;
             border-radius: 3px;
+            appearance:none;  
+            -moz-appearance:none;  
+            -webkit-appearance:none;
+            color: #737373;
+            padding-left: 17px;
+            outline: none;
+        }
+        select{
+            background: url(../../images/backbuy_01_03.png) no-repeat 120px center;
+            background-size: 8px 4px;
         }
         input{
             width: 120px;
@@ -68,7 +78,7 @@ body{
         th:nth-child(3),
         th:nth-child(4),
         th:nth-child(5){
-            width: 100px;
+            width: 110px;
         }
         
         td{
@@ -76,7 +86,7 @@ body{
             word-break: break-word;
             font-size: 12px;
             height: 34px;
-            padding: 0 5px;
+            padding: 0 10px;
         }
         th,
         td:nth-child(2n+1){
